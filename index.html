@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Item Lister - javascript</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Item Lister - JavaScript</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 	<header id="main-header" class="bg-primary text-white p-4 mb-3">
@@ -13,7 +17,7 @@
             <h1 id="header-title">Item Lister</h1>
         </div>
         <div class="col-md-6 align-self-center">
-            <input type="text" class="form-control" id="filter" placeholder="Search Items...">
+            <input type="text" class="form-control w-100" id="filter" placeholder="Search Items...">
         </div>
       </div>
     </div>
@@ -23,14 +27,11 @@
     <h2 class="title">Add Items</h2>
     <form id="addForm" class="form-inline mb-3">
       <input type="text" class="form-control mr-2" id="item">
-      <input type="submit" class="btn btn-dark" value="Submit">
+      <input type="submit" class="btn btn-dark" value="ADD">
     </form>
     <h2 class="title">Items</h2>
+      <div class="text-danger mb-3" id="empty">Empty - Please add some item First</div>
     <ul id="items" class="list-group">
-      <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
-      <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
-      <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
-      <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
     </ul>
    </div>
   </div>
